@@ -1,5 +1,5 @@
-﻿import { redirect } from "next/navigation";
+import { ClientRedirect } from "@/components/ClientRedirect";
 
 export default function LegacyBatchRoute() {
-  redirect("/adp-dem/predict?tab=batch");
+  return <ClientRedirect href="/adp-dem/predict?tab=batch" />;
 }

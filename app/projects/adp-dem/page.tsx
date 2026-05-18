@@ -1,5 +1,5 @@
-﻿import { redirect } from "next/navigation";
+import { ClientRedirect } from "@/components/ClientRedirect";
 
 export default function LegacyAdpDemRoute() {
-  redirect("/adp-dem");
+  return <ClientRedirect href="/adp-dem" />;
 }

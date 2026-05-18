@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import { HelpTooltip } from "@/components/adp-dem/HelpTooltip";
 import { modelModeText } from "@/lib/adp-dem/report";
@@ -40,17 +40,24 @@ const tabs: Array<{ key: PredictTab; label: string }> = [
   { key: "mutation", label: "突变扫描" }
 ];
 
+function normalizePredictTab(value?: string | null): PredictTab {
+  return value === "batch" || value === "compare" || value === "mutation" || value === "single" ? value : "single";
+}
+
 export function PredictionWorkbench({
   candidates,
   initialSequence,
   initialTab,
   backendConfigured
 }: PredictionWorkbenchProps) {
-  const [activeTab, setActiveTab] = useState<PredictTab>(
-    initialTab === "batch" || initialTab === "compare" || initialTab === "mutation" || initialTab === "single"
-      ? initialTab
-      : "single"
-  );
+  const [activeTab, setActiveTab] = useState<PredictTab>(normalizePredictTab(initialTab));
+  const [sequenceFromQuery, setSequenceFromQuery] = useState(initialSequence ?? "");
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setActiveTab(normalizePredictTab(params.get("tab") ?? initialTab));
+    setSequenceFromQuery(params.get("sequence") ?? initialSequence ?? "");
+  }, [initialSequence, initialTab]);
 
   return (
     <div className="space-y-5">
@@ -81,7 +88,7 @@ export function PredictionWorkbench({
         </div>
       </section>
 
-      {activeTab === "single" ? <PredictSingleTab candidates={candidates} initialSequence={initialSequence} backendConfigured={backendConfigured} /> : null}
+      {activeTab === "single" ? <PredictSingleTab candidates={candidates} initialSequence={sequenceFromQuery} backendConfigured={backendConfigured} /> : null}
       {activeTab === "batch" ? <PredictBatchTab candidates={candidates} backendConfigured={backendConfigured} /> : null}
       {activeTab === "compare" ? <PredictCompareTab candidates={candidates} backendConfigured={backendConfigured} /> : null}
       {activeTab === "mutation" ? <PredictMutationTab candidates={candidates} backendConfigured={backendConfigured} /> : null}

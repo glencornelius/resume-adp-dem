@@ -1,6 +1,6 @@
 ﻿"use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import {
   DatasetSummary,
@@ -27,12 +27,19 @@ const tabs: Array<{ key: ResearchTab; label: string }> = [
   { key: "paper", label: "论文资料" }
 ];
 
+function normalizeResearchTab(value?: string | null): ResearchTab {
+  return value === "paper" || value === "pipeline" || value === "dataset" || value === "performance" || value === "ablation"
+    ? value
+    : "pipeline";
+}
+
 export function ResearchHub({ datasetSummary, modelMetrics, featureAblation, paperHighlights, initialTab }: ResearchHubProps) {
-  const [activeTab, setActiveTab] = useState<ResearchTab>(
-    initialTab === "paper" || initialTab === "pipeline" || initialTab === "dataset" || initialTab === "performance" || initialTab === "ablation"
-      ? initialTab
-      : "pipeline"
-  );
+  const [activeTab, setActiveTab] = useState<ResearchTab>(normalizeResearchTab(initialTab));
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    setActiveTab(normalizeResearchTab(params.get("tab") ?? initialTab));
+  }, [initialTab]);
 
   const aminoRows = useMemo(() => {
     return datasetSummary.aminoAcidFrequency.positive

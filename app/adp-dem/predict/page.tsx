@@ -3,15 +3,8 @@ import { PredictionWorkbench } from "@/components/adp-dem/PredictionWorkbench";
 import { getBackendApiBase, isBackendApiConfigured } from "@/lib/adp-dem/api";
 import { loadAdpDemData } from "@/lib/adp-dem/data";
 
-export default async function AdpPredictPage({
-  searchParams
-}: {
-  searchParams?: Promise<{ sequence?: string; tab?: string }>;
-}) {
+export default async function AdpPredictPage() {
   const data = await loadAdpDemData();
-  const params = await searchParams;
-  const initialSequence = params?.sequence ?? "";
-  const initialTab = params?.tab ?? "single";
 
   return (
     <AppShell
@@ -20,8 +13,6 @@ export default async function AdpPredictPage({
     >
       <PredictionWorkbench
         candidates={data.topCandidates.candidates}
-        initialSequence={initialSequence}
-        initialTab={initialTab}
         backendConfigured={isBackendApiConfigured()}
       />
     </AppShell>

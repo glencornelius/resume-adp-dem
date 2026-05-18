@@ -1,5 +1,5 @@
-﻿import { redirect } from "next/navigation";
+import { ClientRedirect } from "@/components/ClientRedirect";
 
 export default function LegacyHistoryRoute() {
-  redirect("/adp-dem/reports");
+  return <ClientRedirect href="/adp-dem/reports" />;
 }

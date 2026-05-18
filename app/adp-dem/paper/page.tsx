@@ -1,5 +1,5 @@
-﻿import { redirect } from "next/navigation";
+import { ClientRedirect } from "@/components/ClientRedirect";
 
 export default function LegacyPaperRoute() {
-  redirect("/adp-dem/research?tab=paper");
+  return <ClientRedirect href="/adp-dem/research?tab=paper" />;
 }
