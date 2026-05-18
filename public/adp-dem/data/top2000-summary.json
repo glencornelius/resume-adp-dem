@@ -1,0 +1,50 @@
+{
+  "generatedAt": "2026-05-15T08:45:32.722313+00:00",
+  "totalCandidates": 2000,
+  "scoreStats": {
+    "min": 0.99824,
+    "max": 0.99935,
+    "mean": 0.998532,
+    "p25": 0.998351,
+    "p50": 0.99849,
+    "p75": 0.998665
+  },
+  "lengthStats": {
+    "min": 5,
+    "max": 38,
+    "mean": 10.69,
+    "median": 10.0
+  },
+  "lengthBins": [
+    {
+      "bin": "long",
+      "count": 362
+    },
+    {
+      "bin": "mid",
+      "count": 820
+    },
+    {
+      "bin": "short",
+      "count": 818
+    }
+  ],
+  "structureCoverage": {
+    "with3Di": 2000,
+    "pending": 0
+  },
+  "topEnzymes": [
+    {
+      "name": "chymotrypsin_high",
+      "count": 754
+    },
+    {
+      "name": "trypsin",
+      "count": 723
+    },
+    {
+      "name": "pepsin_ph13",
+      "count": 523
+    }
+  ]
+}

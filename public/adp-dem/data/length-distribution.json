@@ -1,0 +1,363 @@
+{
+  "generatedAt": "2026-05-15T08:45:32.726953+00:00",
+  "dataset": [
+    {
+      "length": 6,
+      "count": 2
+    },
+    {
+      "length": 7,
+      "count": 1
+    },
+    {
+      "length": 8,
+      "count": 4
+    },
+    {
+      "length": 9,
+      "count": 2
+    },
+    {
+      "length": 10,
+      "count": 1
+    },
+    {
+      "length": 11,
+      "count": 6
+    },
+    {
+      "length": 12,
+      "count": 21
+    },
+    {
+      "length": 13,
+      "count": 17
+    },
+    {
+      "length": 14,
+      "count": 7
+    },
+    {
+      "length": 15,
+      "count": 13
+    },
+    {
+      "length": 16,
+      "count": 14
+    },
+    {
+      "length": 17,
+      "count": 5
+    },
+    {
+      "length": 18,
+      "count": 22
+    },
+    {
+      "length": 19,
+      "count": 19
+    },
+    {
+      "length": 20,
+      "count": 111
+    },
+    {
+      "length": 21,
+      "count": 6
+    },
+    {
+      "length": 22,
+      "count": 7
+    },
+    {
+      "length": 23,
+      "count": 13
+    },
+    {
+      "length": 24,
+      "count": 10
+    },
+    {
+      "length": 25,
+      "count": 7
+    },
+    {
+      "length": 26,
+      "count": 1
+    },
+    {
+      "length": 27,
+      "count": 24
+    },
+    {
+      "length": 28,
+      "count": 3
+    },
+    {
+      "length": 29,
+      "count": 3
+    },
+    {
+      "length": 30,
+      "count": 11
+    },
+    {
+      "length": 31,
+      "count": 8
+    },
+    {
+      "length": 32,
+      "count": 5
+    },
+    {
+      "length": 33,
+      "count": 4
+    },
+    {
+      "length": 34,
+      "count": 5
+    },
+    {
+      "length": 35,
+      "count": 22
+    },
+    {
+      "length": 36,
+      "count": 23
+    },
+    {
+      "length": 37,
+      "count": 7
+    },
+    {
+      "length": 38,
+      "count": 4
+    },
+    {
+      "length": 39,
+      "count": 6
+    },
+    {
+      "length": 40,
+      "count": 9
+    },
+    {
+      "length": 41,
+      "count": 7
+    },
+    {
+      "length": 42,
+      "count": 3
+    },
+    {
+      "length": 43,
+      "count": 6
+    },
+    {
+      "length": 44,
+      "count": 2
+    },
+    {
+      "length": 45,
+      "count": 2
+    },
+    {
+      "length": 46,
+      "count": 5
+    },
+    {
+      "length": 48,
+      "count": 2
+    },
+    {
+      "length": 50,
+      "count": 3
+    },
+    {
+      "length": 52,
+      "count": 1
+    },
+    {
+      "length": 55,
+      "count": 1
+    },
+    {
+      "length": 56,
+      "count": 4
+    },
+    {
+      "length": 60,
+      "count": 3
+    },
+    {
+      "length": 63,
+      "count": 1
+    },
+    {
+      "length": 64,
+      "count": 2
+    },
+    {
+      "length": 68,
+      "count": 1
+    },
+    {
+      "length": 75,
+      "count": 1
+    },
+    {
+      "length": 80,
+      "count": 2
+    },
+    {
+      "length": 85,
+      "count": 1
+    },
+    {
+      "length": 96,
+      "count": 1
+    },
+    {
+      "length": 119,
+      "count": 1
+    }
+  ],
+  "datasetBins": [
+    {
+      "bin": "short",
+      "count": 7
+    },
+    {
+      "bin": "mid",
+      "count": 67
+    },
+    {
+      "bin": "long",
+      "count": 398
+    }
+  ],
+  "topCandidates": [
+    {
+      "length": 5,
+      "count": 326
+    },
+    {
+      "length": 6,
+      "count": 241
+    },
+    {
+      "length": 7,
+      "count": 141
+    },
+    {
+      "length": 8,
+      "count": 110
+    },
+    {
+      "length": 9,
+      "count": 127
+    },
+    {
+      "length": 10,
+      "count": 147
+    },
+    {
+      "length": 11,
+      "count": 159
+    },
+    {
+      "length": 12,
+      "count": 124
+    },
+    {
+      "length": 13,
+      "count": 94
+    },
+    {
+      "length": 14,
+      "count": 87
+    },
+    {
+      "length": 15,
+      "count": 82
+    },
+    {
+      "length": 16,
+      "count": 69
+    },
+    {
+      "length": 17,
+      "count": 67
+    },
+    {
+      "length": 18,
+      "count": 54
+    },
+    {
+      "length": 19,
+      "count": 41
+    },
+    {
+      "length": 20,
+      "count": 39
+    },
+    {
+      "length": 21,
+      "count": 24
+    },
+    {
+      "length": 22,
+      "count": 25
+    },
+    {
+      "length": 23,
+      "count": 16
+    },
+    {
+      "length": 24,
+      "count": 6
+    },
+    {
+      "length": 25,
+      "count": 6
+    },
+    {
+      "length": 26,
+      "count": 4
+    },
+    {
+      "length": 27,
+      "count": 4
+    },
+    {
+      "length": 28,
+      "count": 4
+    },
+    {
+      "length": 30,
+      "count": 1
+    },
+    {
+      "length": 33,
+      "count": 1
+    },
+    {
+      "length": 38,
+      "count": 1
+    }
+  ],
+  "topCandidateBins": [
+    {
+      "bin": "short",
+      "count": 818
+    },
+    {
+      "bin": "mid",
+      "count": 820
+    },
+    {
+      "bin": "long",
+      "count": 362
+    }
+  ]
+}

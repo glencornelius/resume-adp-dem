@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-05-15T08:45:32.726973+00:00",
+  "independentTest": {
+    "stage1": {
+      "name": "Stage-1 High-throughput Screening",
+      "acc": 84.62,
+      "sn": 81.82,
+      "sp": 88.89,
+      "mcc": 69.35,
+      "auc": 96.26,
+      "focus": "适合大规模初筛，强调快速排除低潜力序列。"
+    },
+    "stage2": {
+      "name": "Stage-2 Structure-aware Re-ranking",
+      "acc": 83.16,
+      "sn": 95.74,
+      "sp": 70.83,
+      "mcc": 68.62,
+      "auc": 89.87,
+      "focus": "引入3Di结构信息后，提高对潜在活性肽的捕捉能力。"
+    }
+  },
+  "explanation": [
+    "Stage-1 更适合作为大规模候选库的高通量主筛。",
+    "Stage-2 通过结构感知补充，提高敏感度，降低漏检潜在活性肽的风险。",
+    "两阶段串联可在筛选效率与候选质量之间取得更均衡表现。"
+  ],
+  "methodComparisons": [
+    {
+      "method": "AntiDMPpred",
+      "acc": 77.12,
+      "sn": null,
+      "sp": null,
+      "mcc": null,
+      "auc": 81.93
+    },
+    {
+      "method": "ADP-Fuse",
+      "acc": 94.0,
+      "sn": null,
+      "sp": null,
+      "mcc": 84.1,
+      "auc": null
+    },
+    {
+      "method": "STADIP",
+      "acc": 95.4,
+      "sn": null,
+      "sp": null,
+      "mcc": null,
+      "auc": null
+    },
+    {
+      "method": "BertADP",
+      "acc": 95.5,
+      "sn": 100.0,
+      "sp": 91.0,
+      "mcc": null,
+      "auc": null
+    },
+    {
+      "method": "ADP-DEM Stage-1",
+      "acc": 84.62,
+      "sn": 81.82,
+      "sp": 88.89,
+      "mcc": 69.35,
+      "auc": 96.26
+    },
+    {
+      "method": "ADP-DEM Stage-2",
+      "acc": 83.16,
+      "sn": 95.74,
+      "sp": 70.83,
+      "mcc": 68.62,
+      "auc": 89.87
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "generatedAt": "2026-05-15T08:45:32.727527+00:00",
+  "target": "DPP-IV",
+  "engine": "HPEPDOCK",
+  "summary": {
+    "top100Below200": 37,
+    "top100Below220": 16,
+    "minimumEnergy": -258.9,
+    "top20Range": "-139.292 to -253.026",
+    "interpretation": "Lower docking energy usually indicates stronger predicted binding tendency, but experimental validation is still required."
+  },
+  "topComplexes": [
+    {
+      "sequence": "MEALKRKIEEEGVVL",
+      "predictedProbability": 97.5,
+      "dockingEnergy": -208.572
+    },
+    {
+      "sequence": "RIMVGAGVVMILAAL",
+      "predictedProbability": 97.05,
+      "dockingEnergy": -229.722
+    },
+    {
+      "sequence": "HMELLREELMDDEVR",
+      "predictedProbability": 96.49,
+      "dockingEnergy": -192.458
+    },
+    {
+      "sequence": "KEEAEELGKKIEEL",
+      "predictedProbability": 96.46,
+      "dockingEnergy": -139.292
+    },
+    {
+      "sequence": "AGLEFEDEIEELAEK",
+      "predictedProbability": 95.68,
+      "dockingEnergy": -186.206
+    },
+    {
+      "sequence": "IMKAGGVLMIVIGVL",
+      "predictedProbability": 95.3,
+      "dockingEnergy": -223.661
+    },
+    {
+      "sequence": "EVEREIEDMEEDQDL",
+      "predictedProbability": 95.09,
+      "dockingEnergy": -158.129
+    },
+    {
+      "sequence": "ILAVVAVGMIGAGL",
+      "predictedProbability": 95.02,
+      "dockingEnergy": -209.499
+    },
+    {
+      "sequence": "RVIPAAVVGAAVAGGL",
+      "predictedProbability": 94.9,
+      "dockingEnergy": -253.026
+    },
+    {
+      "sequence": "LAPEIERMGAMIVEL",
+      "predictedProbability": 94.63,
+      "dockingEnergy": -221.88
+    },
+    {
+      "sequence": "EEIDALIQELGDRHE",
+      "predictedProbability": 94.42,
+      "dockingEnergy": -186.633
+    },
+    {
+      "sequence": "AEEMIEEGKELAK",
+      "predictedProbability": 93.97,
+      "dockingEnergy": -152.641
+    },
+    {
+      "sequence": "ADLEEHLRMLEEAK",
+      "predictedProbability": 93.9,
+      "dockingEnergy": -190.501
+    },
+    {
+      "sequence": "EEEDPREELIEKL",
+      "predictedProbability": 93.58,
+      "dockingEnergy": -176.092
+    },
+    {
+      "sequence": "KEHPELEGIIKKML",
+      "predictedProbability": 93.45,
+      "dockingEnergy": -190.31
+    },
+    {
+      "sequence": "ETARKGDEAALEEERRL",
+      "predictedProbability": 93.36,
+      "dockingEnergy": -186.439
+    },
+    {
+      "sequence": "LAGGMIAVMAPIL",
+      "predictedProbability": 93.27,
+      "dockingEnergy": -201.536
+    },
+    {
+      "sequence": "GIAMAVGMAIAERHL",
+      "predictedProbability": 92.49,
+      "dockingEnergy": -246.048
+    },
+    {
+      "sequence": "LKEIHEAAKGDKREDIPL",
+      "predictedProbability": 92.36,
+      "dockingEnergy": -195.509
+    },
+    {
+      "sequence": "EAGGEELRIEEDL",
+      "predictedProbability": 92.04,
+      "dockingEnergy": -171.697
+    }
+  ],
+  "notes": [
+    "Docking scores are computational predictions and should not be interpreted as clinical efficacy.",
+    "Results are used to prioritize candidates for downstream wet-lab validation."
+  ]
+}

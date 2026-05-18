@@ -1,0 +1,21 @@
+﻿<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#040915"/>
+      <stop offset="0.55" stop-color="#0A1632"/>
+      <stop offset="1" stop-color="#171423"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="280" y1="170" x2="850" y2="430" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D4B273"/>
+      <stop offset="1" stop-color="#88A0FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="180" cy="110" r="140" fill="#D4B273" fill-opacity="0.12"/>
+  <circle cx="1070" cy="500" r="180" fill="#5E79FF" fill-opacity="0.18"/>
+  <rect x="70" y="70" width="1060" height="490" rx="34" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.2)"/>
+  <text x="130" y="220" fill="#F7E7C0" font-size="34" font-family="Arial, sans-serif">Medical AI Project Showcase</text>
+  <text x="130" y="302" fill="url(#gold)" font-size="72" font-weight="700" font-family="Arial, sans-serif">ADP-DEM</text>
+  <text x="130" y="358" fill="#FFFFFF" font-size="42" font-family="Arial, sans-serif">抗糖尿病肽智能筛选系统</text>
+  <text x="130" y="418" fill="#B9C3DF" font-size="26" font-family="Arial, sans-serif">Sequence Semantics + 3Di Structure-aware Evidence Fusion</text>
+</svg>

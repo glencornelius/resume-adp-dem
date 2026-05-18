@@ -1,0 +1,58 @@
+{
+  "generatedAt": "2026-05-15T08:45:32.726981+00:00",
+  "note": "The paper emphasizes trend-level impact across features. Values below are normalized contribution scores for visualization, not standalone benchmark claims.",
+  "featureContribution": [
+    {
+      "feature": "ESM2 sequence semantics",
+      "normalizedImpact": 0.96,
+      "description": "提供深层序列语义信息，是主筛性能提升的关键来源。"
+    },
+    {
+      "feature": "ProtBert peptide embedding",
+      "normalizedImpact": 0.91,
+      "description": "补充另一类语言模型视角，增强特征鲁棒性。"
+    },
+    {
+      "feature": "AAC composition",
+      "normalizedImpact": 0.67,
+      "description": "提供氨基酸组成先验，对基础分类稳定性有帮助。"
+    },
+    {
+      "feature": "Physicochemical descriptors",
+      "normalizedImpact": 0.79,
+      "description": "提升可解释性，帮助反映电荷、疏水性等生化性质。"
+    },
+    {
+      "feature": "CTD descriptors",
+      "normalizedImpact": 0.63,
+      "description": "补充分布与转移信息，在特定长度区间提供增益。"
+    },
+    {
+      "feature": "Length bin encoding",
+      "normalizedImpact": 0.55,
+      "description": "帮助模型区分短肽/中肽/长肽模式，减少长度偏置。"
+    },
+    {
+      "feature": "SaProt 3Di structure signal",
+      "normalizedImpact": 0.93,
+      "description": "用于第二阶段结构感知精排，显著提升召回潜在活性肽能力。"
+    }
+  ],
+  "moduleAblation": [
+    {
+      "module": "Gated feature fusion",
+      "impact": "Improves stability across folds",
+      "summary": "门控融合让不同特征在样本层面动态分配权重，降低单一特征失效风险。"
+    },
+    {
+      "module": "GAUR-XGB calibration",
+      "impact": "Improves ranking consistency",
+      "summary": "二级校准通过一致性奖励和不确定性惩罚改进排序质量。"
+    },
+    {
+      "module": "Toxicity/hemolysis penalty",
+      "impact": "Improves developability",
+      "summary": "在排序阶段加入可开发性约束，避免高分但高风险序列优先。"
+    }
+  ]
+}
