@@ -9,9 +9,9 @@ export const defaultResumeData: ResumeData = {
     degree: "本科",
     graduationYear: "2026",
     location: "江苏徐州",
-    email: "gechaowei@example.com",
+    email: "a1933014774@163.com",
     phone: "15215866836",
-    wechat: "gcw-med-ai",
+    wechat: "gcw15215866836",
     github: "",
     website: "",
     avatarUrl: "/avatar-gechaowei.jpg",
@@ -26,10 +26,10 @@ export const defaultResumeData: ResumeData = {
       degree: "本科",
       startDate: "2022.09",
       endDate: "2026.06",
-      courses: ["医学信息学", "机器学习", "Python 程序设计", "数据库原理", "医学影像处理"],
-      gpa: "3.72/4.0",
-      ranking: "前 12%",
-      honors: ["校级优秀学生奖学金", "三好学生"]
+      courses: ["医学信息学", "机器学习", "Python 程序设计", "数据库原理", "医学影像处理", "神经网络与深度学习", "自然语言处理", "系统解剖学", "电子学基础", "病理生理学", "临川医学概论"],
+      gpa: "3.9/5",
+      ranking: "前10%",
+      honors: ["校单项奖学金", "校二等奖学金", "校三好学生"]
     }
   ],
   skills: {
@@ -191,7 +191,21 @@ export const defaultResumeData: ResumeData = {
       description: "负责项目展示页面开发与答辩材料整理"
     },
     {
-      name: "校级优秀学生奖学金",
+      name: "校单项奖学金",
+      type: "奖学金",
+      issuer: "",
+      date: "2024.12",
+      description: "综合成绩与实践表现优秀"
+    },
+    {
+      name: "校二等奖学金",
+      type: "奖学金",
+      issuer: "",
+      date: "2024.12",
+      description: "综合成绩与实践表现优秀"
+    },
+    {
+      name: "校三好学生",
       type: "奖学金",
       issuer: "",
       date: "2024.12",
@@ -199,10 +213,24 @@ export const defaultResumeData: ResumeData = {
     },
     {
       name: "大学英语四级 CET-4",
-      type: "语言证书",
+      type: "证书",
       issuer: "",
       date: "2023.12",
-      description: ""
+      description: "555"
+    },
+    {
+      name: "大学英语六级 CET-6",
+      type: "证书",
+      issuer: "",
+      date: "2024.06",
+      description: "443"
+    },
+    {
+      name: "计算机二级证书",
+      type: "证书",
+      issuer: "",
+      date: "",
+      description: "优秀(＞90)"
     }
   ],
   selfEvaluation: {
